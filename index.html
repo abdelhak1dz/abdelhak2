@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fight with your weapon</h1>
+    <p>I played Shooter 3D in the third edition, which has many modes, including Battle Royale, 5v5, and other features of the game.</p>
+    <button onclick="showLoadingScreen()">عرض واجهة التحميل</button>
+    <a href="https://discord.gg/yZ9CcAEX" class="discord-button" target="_blank">دخول سيرفر ديسكورد</a>
+
+    <!-- نافذة منبثقة -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>رابط التحميل تحت</h2>
+            <a href="#" class="download-link" onclick="showSecondModal(event)">تحميل الآن</a>
+        </div>
+    </div>
+
+    <!-- نافذة منبثقة ثانية -->
+    <div id="mySecondModal" class="modal">
+        <div class="modal-content modal-content-second">
+            <span class="close" onclick="closeSecondModal()">&times;</span>
+            <h2>اللعبة لم تصدر بعد</h2>
+            <p>في يوم 15 أبريل 2025 ستنطلق اللعبة.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
